@@ -11,4 +11,7 @@
     <artifactId>chapter01</artifactId>
     <packaging>pom</packaging>
     <description>CloudConfig</description>
+    <modules>
+        <module>section01</module>
+    </modules>
 </project>
