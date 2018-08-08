@@ -3,15 +3,19 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-cloud</artifactId>
+        <artifactId>chapter02</artifactId>
         <groupId>cn.ep</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>chapter02</artifactId>
-    <packaging>pom</packaging>
-    <description>CloudDiscovery</description>
-    <modules>
-        <module>section01</module>
-    </modules>
+    <artifactId>chapter02-section01</artifactId>
+    <packaging>jar</packaging>
+    <description>Eureka Server</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+    </dependencies>
 </project>
