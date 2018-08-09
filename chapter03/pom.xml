@@ -11,4 +11,7 @@
     <artifactId>chapter03</artifactId>
     <packaging>pom</packaging>
     <description>CloudRouting</description>
+    <modules>
+        <module>section01</module>
+    </modules>
 </project>
