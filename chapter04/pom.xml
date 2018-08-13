@@ -11,4 +11,7 @@
     <artifactId>chapter04</artifactId>
     <packaging>pom</packaging>
     <description>CloudCircuitBreaker</description>
+    <modules>
+        <module>section01</module>
+    </modules>
 </project>
