@@ -1,13 +1,17 @@
 package cn.ep.spring.boot.ch02.s02;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CustomController {
 
+    @Value("${server.port}")
+    private String port;
+
     @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name", defaultValue = "admin") String name) {
-        return "hi " + name;
+    public String hi(@RequestParam(value = "name", defaultValue = "admin") String name) {
+        return "hi " + name + " ,i am from port:" + port;
     }
 
 }
