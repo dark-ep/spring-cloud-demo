@@ -3,7 +3,7 @@ package cn.ep.spring.boot.ch03.s03;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi", fallback = CustomServiceHystric.class)
 public interface CustomService {
 
     @GetMapping(value = "/hi")
