@@ -13,5 +13,6 @@
     <description>CloudCircuitBreaker</description>
     <modules>
         <module>section01</module>
+        <module>section02</module>
     </modules>
 </project>
