@@ -1,0 +1,6 @@
+server:
+  port: 8989
+
+spring:
+  zipkin:
+    base-url: http://ep.cn:9411
