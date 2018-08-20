@@ -11,4 +11,7 @@
     <artifactId>chapter06</artifactId>
     <packaging>pom</packaging>
     <description>CloudMessaging</description>
+    <modules>
+        <module>section01</module>
+    </modules>
 </project>
