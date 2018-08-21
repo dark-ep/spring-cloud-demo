@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: stream-kafka-consumer
+  cloud:
+    stream:
+      instance-count: 1
+      instance-index: 0
+      kafka:
+        binder:
+          brokers: ep.cn:9092,ep.cn:9093,ep.cn:9094
+          auto-add-partitions: true
+          auto-create-topics: true
+          min-partition-count: 1
+      bindings:
+        input:
+          destination: event-demo
+          group: s1
+          consumer:
+            autoCommitOffset: false
+            concurrency: 1
+            partitioned: false
