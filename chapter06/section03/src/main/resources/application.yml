@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: stream-kafka-producer
+  cloud:
+    stream:
+      instance-count: 1
+      instance-index: 0
+      kafka:
+        binder:
+          brokers: ep.cn:9092,ep.cn:9093,ep.cn:9094
+          auto-add-partitions: true
+          auto-create-topics: true
+          min-partition-count: 1
+      bindings:
+        output:
+          destination: event-demo
+          content-type: text/plain
+          producer:
+            partitionCount: 1
