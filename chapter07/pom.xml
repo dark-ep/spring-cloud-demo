@@ -11,4 +11,7 @@
     <artifactId>chapter07</artifactId>
     <packaging>pom</packaging>
     <description>CloudCore</description>
+    <modules>
+        <module>section01</module>
+    </modules>
 </project>
